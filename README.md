@@ -34,6 +34,8 @@ Once the project is fully migrated to SvelteKit and into my personal ArcGIS Onli
 
 The .env file must contain login credentials for ArcGIS Online.  This is for reading and writing District Proposals.
 
+Once the project migration is complete (from County to personal infrastructure), other documentation will include instructions for identifying ArcGIS Online folders and groups to manage data locations and access.
+
 ```
 ARCGIS_USERNAME=my_username
 ARCGIS_PASSWORD=xxxxxxxxxxxxxxxx
