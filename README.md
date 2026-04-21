@@ -30,6 +30,15 @@ Unfortunately, my efforts to extract the app into my personal ArcGIS Online have
 
 Once the project is fully migrated to SvelteKit and into my personal ArcGIS Online space, the project runs like any other SvelteKit project.  See below.
 
+## Environment
+
+The .env file must contain login credentials for ArcGIS Online.  This is for reading and writing District Proposals.
+
+```
+ARCGIS_USERNAME=my_username
+ARCGIS_PASSWORD=xxxxxxxxxxxxxxxx
+```
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
