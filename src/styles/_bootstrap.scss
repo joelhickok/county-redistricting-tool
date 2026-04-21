@@ -1,0 +1,54 @@
+.test {
+  color: blue;
+}
+
+//@import "node_modules/bootstrap/scss/functions";
+
+//$nav-pills-link-active-color: black;
+//$nav-pills-link-active-bg: ghostwhite;
+
+$primary: #256db6;
+$secondary: #D9CB9E;
+$success: #43A047;
+$info: #00796B;
+//$warning: #e17a3c;
+$danger: darken(red, 13%);
+$light: #BDC3C7;
+$dark: #374140;
+
+
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "danger": $danger,
+        "light": $light,
+        "dark": $dark,
+);
+
+//$custom-colors: (
+//        "custom-color": #900
+//);
+
+// Merge the maps
+//$theme-colors: map-merge($theme-colors, $custom-colors);
+
+//$body-bg: #000;
+//$body-color: #111;
+
+$spacer: 0.8rem;
+$enable-rounded: false;
+$accordion-button-padding-y: 5px;
+$accordion-button-padding-x: 15px;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+//@import "../node_modules/bootstrap/scss/variables";
+//@import "../node_modules/bootstrap/scss/variables-dark";
+//@import "../node_modules/bootstrap/scss/maps";
+//@import "../node_modules/bootstrap/scss/mixins";
+//@import "../node_modules/bootstrap/scss/root";
+
+.stat-demo {
+  @extend .text-center;
+}

@@ -1,0 +1,68 @@
+$lighten-value: 20%;
+
+//$d0: #6b6b6b;
+//$d1: #e41a1c;
+//$d2: #377eb8;
+//$d3: #4daf4a;
+//$d4: #984ea3;
+//$d5: #ff7f00;
+
+$d0: #6b6b6b;
+$d1: #E69F00;
+$d2: #009E73;
+//$d2: #56B4E9;
+$d3: #F0E442;
+$d4: #0072B2;
+$d5: #CC79A7;
+
+$districts: (
+        "0": $d0,
+        "1": $d1,
+        "2": $d2,
+        "3": $d3,
+        "4": $d4,
+        "5": $d5,
+);
+
+//@debug map.get($districts, '0');
+
+@each $district, $color in $districts {
+  .primary-#{$district} {
+    background-color: $color !important;
+    color: white !important;
+    @if $district == "3" {
+      color: black !important;
+    }
+  }
+  .primary-#{$district} > button {
+    background-color: $color !important;
+    color: white !important;
+    @if $district == "3" {
+      color: black !important;
+    }
+  }
+  .body-#{$district} {
+    background-color: darken($color, 10%) !important;
+    color: white !important;
+    @if $district == "3" {
+      color: black !important;
+    }
+  }
+  .secondary-#{$district} {
+    background-color: darken($color, $lighten-value) !important;
+    color: white;
+    @if $district == "3" {
+      background-color: darken($color, 35%) !important;
+      color: black !important;
+    }
+  }
+  .text-#{$district} {
+    color: lighten($color, 15%) !important;
+    @if $district == "3" {
+      color: darken($color, 40%) !important;
+    }
+  }
+  .text-secondary-#{$district} {
+    color: lighten($color, 25%) !important;
+  }
+}
