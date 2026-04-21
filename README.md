@@ -5,7 +5,8 @@ My boss wanted a web app that would allow people to build **data-driven** redist
 This is a full stack Node.js app that interacts on the server side with ArcGIS Online, and ArcGIS Server.  It also runs web map layers and features services on the client side.  It stores user data using IndexedDB to persist user sessions in the browser, as this avoids long-running "redistricting sessions" becoming lost across browser reloads.
 
 An incomplete list of the tech stack this project uses includes:
-ArcGIS Rest JS packages, SvelteKit, Terraformer JS, Leaflet, Leaflet Geoman, Turf.js, C3 charting (built on D3), Dexie.js, Leaflet additional plugins, and Lodash.
+
+`ArcGIS Rest JS packages`, `SvelteKit`, `Terraformer JS`, `Leaflet`, `Leaflet Geoman`, `Turf.js`, `C3 charting (built on D3)`, `Dexie.js`, `Leaflet additional plugins`, and `Lodash`.
 
 
 ## Current Migration State
